@@ -1,0 +1,71 @@
+body{
+    background-color: slategray;
+}
+
+.item1 { grid-area: header;
+    background-color: lightslategrey;
+    color: white;
+}
+.item2 {
+    grid-area: afb1;
+}
+.item3 {
+    grid-area: main;
+    padding-bottom: 10px;
+}
+.item4 {
+    grid-area: afb2;
+}
+.small1 {
+    grid-area: small1
+}
+.small2 {
+    grid-area: small2
+}
+.small3 {
+    grid-area: small3;
+}
+.item5 {
+    grid-area: footer;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.grid-container {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-areas:
+            'header header header header header header'
+            'main main main main main main'
+            'afb1 small1 small1 small2 small2 afb2'
+            'afb1 small3 small3 small3 small3 afb2'
+            'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: lightslategrey;
+    padding: 10px;
+}
+.grid-container>div {
+    background-color:darkslategray;
+    text-align: center;
+    padding:20px 0;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .grid-container{
+        /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+        display: grid;
+        grid-template-areas:
+                'header header header header header'
+                'small1 afb1 afb1 afb2 afb2'
+                'small1 afb1 afb1 afb2 afb2'
+                'small3 small3 small3 small3'
+                'footer footer footer footer footer';
+    }
+
+}
