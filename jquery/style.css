@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section{
+    text-align: center;
+}
+
+@media screen and (min-width: 850px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: lightgreen;
+}
