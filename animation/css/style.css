@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+    margin: 50px
+}
+
+#btn{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid greenyellow;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#block{
+    height: 25px;
+    width: 25px;
+    background-color: darkcyan;
+    position: absolute;
+}
